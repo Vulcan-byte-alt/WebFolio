@@ -60,16 +60,6 @@
         }
     </script>
     <style>
-        /* Keep all the CSS styles provided in the previous code.  This includes: */
-        /* .market-data-grid, .trading-card, .market-ticker-container, .market-ticker, @keyframes market-ticker, */
-        /* .hero-gradient, .terminal-window, .terminal-header, .terminal-button, .terminal-close, .terminal-minimize, */
-        /* .terminal-maximize, .terminal-content, .typing-animation, @keyframes typing, @keyframes blink-caret, */
-        /* .market-data-card, .market-data-card:hover, .platform-feature, .platform-feature:hover, */
-        /* .custom-scrollbar, .custom-scrollbar::-webkit-scrollbar, .custom-scrollbar::-webkit-scrollbar-track, */
-        /* .custom-scrollbar::-webkit-scrollbar-thumb, .chart-container, .testimonial-card, .testimonial-card:hover, */
-        /* .feature-grid, .pricing-card, .pricing-card:hover, .api-code-block, .placeholder-image, .gradient-border, */
-        /* .custom-scrollbar, .service-box, .service-box:hover */
-
         .market-data-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -96,7 +86,6 @@
             display: flex;
             white-space: nowrap;
             animation: market-ticker 30s linear infinite;
-            /* Increased duration for smoother loop */
         }
 
         .market-ticker:hover {
@@ -110,7 +99,6 @@
 
             100% {
                 transform: translateX(-50%);
-                /* Move to the left by 50% (one set's width) */
             }
         }
 
@@ -221,7 +209,6 @@
             border-radius: 3px;
         }
 
-        /* Additional Styles */
         .chart-container {
             background: linear-gradient(180deg, rgba(14, 165, 233, 0.05) 0%, rgba(14, 165, 233, 0) 100%);
             border: 1px solid rgba(14, 165, 233, 0.1);
@@ -277,12 +264,8 @@
             font-size: 2em;
             font-weight: 600;
             transition: transform 0.3s ease;
-            /*added transition to the container*/
             overflow: hidden;
-
-
         }
-
 
         .placeholder-image:hover {
             transform: scale(1.1);
@@ -361,7 +344,6 @@
 </head>
 
 <body class="bg-black text-white custom-scrollbar">
-    <!-- Market Ticker - Optional, can remove or customize -->
     <div class="bg-gray-900 py-2 overflow-hidden border-b border-gray-800">
         <div class="market-ticker-container">
             <div class="market-ticker">
@@ -375,14 +357,11 @@
         </div>
     </div>
 
-    <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <!-- Brand Logo/Name -->
                 <a href="#" class="text-2xl font-bold text-primary-400">Suhail Siyad</a>
 
-                <!-- Hamburger Menu for Mobile -->
                 <button id="menu-toggle"
                     class="md:hidden fixed top-4 right-4 z-50 p-2 text-gray-300 hover:text-primary-400">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -392,7 +371,6 @@
                     </svg>
                 </button>
 
-                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="text-gray-300 hover:text-primary-400 transition-colors">About</a>
                     <a href="#skills" class="text-gray-300 hover:text-primary-400 transition-colors">Skills</a>
@@ -401,7 +379,6 @@
                     <a href="#contact" class="text-gray-300 hover:text-primary-400 transition-colors">Contact</a>
                 </div>
 
-                <!-- Action Buttons (Connect Links) -->
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"
                         class="text-gray-300 hover:text-primary-400 transition-colors">GitHub</a>
@@ -412,7 +389,6 @@
                 </div>
             </div>
 
-            <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden fixed md:hidden bg-black w-full z-40 px-8 py-20 p pb-10 pt-16"
                 style="left:0px;">
                 <div class="flex flex-col items-center space-y-4">
@@ -441,7 +417,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero-gradient min-h-screen flex items-center py-20 sm:overflow-x-hidden sm:px-4">
         <div class="container mx-auto px-6 max-w-full">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -492,7 +467,6 @@
                     </div>
                 </div>
                 <div class="relative">
-                    <!-- Terminal Window - Showcase skills/experience -->
                     <div class="terminal-window">
                         <div class="terminal-header">
                             <div class="terminal-button terminal-close"></div>
@@ -514,7 +488,6 @@
         </div>
     </section>
 
-    <!-- About Me -->
     <section id="about" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
             <p class="text-center text-lg md:text-xl text-primary-400 font-medium tracking-wide mb-4">
@@ -544,7 +517,7 @@
                 <div class="placeholder-image">
                     <video class="object-cover h-full w-full rounded-lg" autoplay loop muted playsinline>
                         <source src="video.mp4" type="video/mp4">
-                        <source src="your-video.webm" type="video/webm"> <!-- Optional, for broader compatibility -->
+                        <source src="your-video.webm" type="video/webm">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -552,7 +525,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="py-20 bg-black">
         <div class="container mx-auto px-6">
             <p class="text-center text-lg md:text-xl text-primary-400 font-medium tracking-wide mb-4">
@@ -619,7 +591,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
             <p class="text-center text-lg md:text-xl text-primary-400 font-medium tracking-wide mb-4">
@@ -628,7 +599,6 @@
             <h2 class="text-4xl font-bold mb-16 text-center">Projects</h2>
             <div class="grid md:grid-cols-2 gap-8">
 
-                <!-- Project Card 1 -->
                 <div class="market-data-card p-6 rounded-lg">
                     <div class="placeholder-image mb-4">
                         <img src="project1.png" alt="Project 1 Image" class="object-cover h-full w-full rounded-lg" />
@@ -641,7 +611,6 @@
                     <a href="#" class="text-primary-400 hover:text-primary-500">GitHub Repo</a>
                 </div>
 
-                <!-- Project Card 2 -->
                 <div class="market-data-card p-6 rounded-lg">
                     <div class="placeholder-image mb-4">
                         <img src="project2.png" alt="Project 2 Image" class="object-cover h-full w-full rounded-lg" />
@@ -654,7 +623,6 @@
                     <a href="#" class="text-primary-400 hover:text-primary-500">GitHub Repo</a>
                 </div>
 
-                <!-- Project Card 3 -->
                 <div class="market-data-card p-6 rounded-lg">
                     <div class="placeholder-image mb-4">
                         <img src="project3.png" alt="Project 3 Image" class="object-cover h-full w-full rounded-lg" />
@@ -667,7 +635,6 @@
                     <a href="#" class="text-primary-400 hover:text-primary-500">GitHub Repo</a>
                 </div>
 
-                <!-- Project Card 4 -->
                 <div class="market-data-card p-6 rounded-lg">
                     <div class="placeholder-image mb-4">
                         <img src="project4.png" alt="Project 4 Image" class="object-cover h-full w-full rounded-lg" />
@@ -683,7 +650,6 @@
         </div>
     </section>
 
-    <!-- Resume Section -->
     <section id="resume" class="py-20 bg-black">
         <div class="container mx-auto px-6">
             <p class="text-center text-lg md:text-xl text-primary-400 font-medium tracking-wide mb-4">
@@ -695,7 +661,6 @@
                     class="bg-primary-500 hover:bg-primary-600 px-8 py-3 rounded-md transition-colors">Download
                     Resume (PDF)</a>
             </div>
-            <!-- You can also include a brief summary of your work experience here -->
             <div class="mt-8 space-y-6">
                 <div class="service-box">
                     <h3 class="text-xl font-bold mb-2">Web Developer</h3>
@@ -719,7 +684,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
             <p class="text-center text-lg md:text-xl text-primary-400 font-medium tracking-wide mb-4">
@@ -760,8 +724,7 @@
                         <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"
                             class="flex items-center text-gray-300 hover:text-primary-400">
                             <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.4252.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
                                     clip-rule="evenodd"></path>
                             </svg>
                             GitHub
@@ -790,7 +753,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 py-12">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-8 text-center md:text-left">
@@ -859,10 +821,8 @@
 
 
     <script>
-        // Initialize GSAP ScrollTrigger
         gsap.registerPlugin(ScrollTrigger);
 
-        // Animate elements on scroll
         const animateOnScroll = () => {
             gsap.utils.toArray('section').forEach(section => {
                 gsap.from(section, {
@@ -958,13 +918,11 @@
             const tickerContent = document.getElementById('ticker-content');
 
             if (tickerContainer && tickerContent) {
-                // Function to duplicate ticker content and append it to the container.
                 function duplicateTickerContent() {
                     const clonedContent = tickerContent.cloneNode(true);
                     tickerContainer.appendChild(clonedContent);
                 }
 
-                // Clone the ticker content initially to have two copies.
                 duplicateTickerContent();
             }
         });
@@ -977,7 +935,6 @@
                 try {
                     await navigator.clipboard.writeText(code.trim());
 
-                    // Visual feedback
                     copyButton.innerHTML = `
                                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -987,7 +944,6 @@
                     copyButton.classList.remove('text-gray-500');
                     copyButton.classList.add('text-green-500');
 
-                    // Reset after 2 seconds
                     setTimeout(() => {
                         copyButton.innerHTML = `
                                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
